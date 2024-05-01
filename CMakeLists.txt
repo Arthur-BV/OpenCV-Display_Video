@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.0)
+project( DisplayVideo )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( DisplayVideo DisplayVideo.cpp )
+target_link_libraries( DisplayVideo ${OpenCV_LIBS} )
